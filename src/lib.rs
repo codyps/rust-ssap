@@ -39,8 +39,9 @@ pub fn parse<'a>(data: &'a [&'a [u8]]) -> Vec<Elem<'a>>
     base
 }
 
+
 #[test]
-fn it_works() {
+fn test_parse() {
     assert_eq!(vec![Elem::Value(b"foo")], parse(&vec![b"foo"]));
     assert_eq!(vec![Elem::Value(b"foo"),Elem::List(vec![Elem::Value(b"bar")])],
         parse(&vec![b"foo", b"[", b"bar", b"]"]));

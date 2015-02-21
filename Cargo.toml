@@ -1,5 +1,8 @@
 [package]
 
-name = "sarg"
+name = "ssap"
 version = "0.0.1"
 authors = ["Cody P Schafer <dev@codyps.com>"]
+license = "AGPLv3"
+keywords = ["parse", "arguments"]
+description = "A simple structured argument parser"
